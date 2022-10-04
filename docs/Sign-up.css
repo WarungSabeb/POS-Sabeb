@@ -15,7 +15,7 @@ label {
     color: #2dbd6e;
     font-family: "Raleway", sans-serif;
     font-size: 10pt;
-    margin-top: 3px;
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -23,9 +23,9 @@ label {
     background: #fbfbfb;
     border-radius: 8px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-    height: 410px;
+    height: 500px;
     margin: 6rem auto 8.1rem auto;
-    width: 329px;
+    width: 400px;
 }
 
 #card-content {
@@ -49,7 +49,7 @@ label {
 }
 
 #login {
-    color: #080808;
+    color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: 10pt;
     margin-top: 16px;
@@ -66,7 +66,7 @@ label {
     font-family: "Raleway SemiBold", sans-serif;
     height: 42.3px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 65px;
     transition: 0.25s;
     width: 153px;
 }
@@ -98,7 +98,7 @@ label {
     background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
     height: 2px;
     margin: -1.1rem auto 0 auto;
-    width: 89px;
+    width: 135px;
 }
 
 .input-group {

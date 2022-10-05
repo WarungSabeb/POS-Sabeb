@@ -45,15 +45,15 @@
   cursor: pointer;
 }
 
-body.x1{
+div.x1{
 background-image: url("https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/10/13/2790736395.jpg");
 height: 1000px;
 }
 
-body.x2{
+div.x2{
 font-family: sans-serif;
 }
-div.x1{
+div.x3{
 border: 2px solid black;
  border-radius: 8px;
  padding: 5px;
@@ -66,7 +66,7 @@ animation: fadeIn;
 animation-duration: 1.5s;
 }
 
-div.x2{
+div.x4{
 border: 2px solid black;
 border-radius: 8px;
 padding: 5px;

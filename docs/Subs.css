@@ -4,8 +4,10 @@
     background-color: blue;
   }
   
-  
-  
+body{
+background-image: url("https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/10/13/2790736395.jpg");
+height: 1000px;
+  }
   
   nav ul li a:hover {
     color: #fff;
@@ -46,8 +48,6 @@
 }
 
 div.x1{
-background-image: url("https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/10/13/2790736395.jpg");
-height: 1000px;
 }
 
 div.x2{

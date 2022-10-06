@@ -4,28 +4,41 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-.contact
+
+body {
+    background: -webkit-linear-gradient(bottom, #24e082, #8fdf8f);
+    /* background: white; */
+}
+.square
 {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100%; */
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:url(https://gasturbineservices.com/wp-content/uploads/2016/10/background-factory-blue.jpg);
-    background-size: cover;
+    background: -webkit-linear-gradient(bottom, #24e082, #8fdf8f);
 }
+
+nav {
+    top: 0;
+}
+
 .contact .content h2
 {
     font-weight: 500;
     font-size: 36px;
-    color: white;
+    color: black;
 }
 .contact .content p
 {
     font-weight: 300;
-    color: white;
+    color: black
 }
 .container
 {
@@ -70,7 +83,8 @@
 .container .contactInfo .box .text h3
 {
     font-weight: 500;
-    color: aquamarine;
+    /* color: aquamarine; */
+    color: black;
 }
 .contactForm
 {
@@ -125,13 +139,18 @@
 .contactForm .inputBox input[type="submit"]
 {
     width: 100%;
-    background-color: aqua;
+    background: -webkit-linear-gradient(right, #2dbd6e, #2dbd6e);
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
 }
+
+p {
+    color: black;
+}
+
 @media (max-widht:991px)
 {
     .contact
@@ -151,3 +170,4 @@
         width: 100%;
     }
 }
+

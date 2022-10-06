@@ -45,7 +45,8 @@ height: 900px;
   
   .navbar-nav > li{
     list-style: none;
-    }
+    padding-left: 0;
+  }
 
 
 #logo {

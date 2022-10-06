@@ -15,10 +15,6 @@
 }
   
 
-
-a{
-    text-decoration: none;
-}
 body {
     background: -webkit-linear-gradient(bottom, #24e082, #8fdf8f);
     background-repeat: no-repeat;
@@ -67,7 +63,7 @@ label {
 }
 
 #login {
-    color: #ffffff;
+    color: black;
     font-family: "Raleway", sans-serif;
     font-size: 10pt;
     margin-top: 16px;

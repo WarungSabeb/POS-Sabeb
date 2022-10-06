@@ -37,13 +37,13 @@ let food = [
         name:`Nasi`,
         stok: 50,
         harga: 5000,
-        image:'https://github.com/leonardlienry/warungsb/blob/main/assets/images/nasi_putih.jpg?raw=true'
+        image:'https://i.ibb.co/Q6KyGXW/6033.jpg'
     },
     {
         name:`Ayam Goreng`,
         stok: 30,
         harga: 20000,
-        image:'https://www.waroengss.com/filemanager/image/products/550/1549703665_5c5e99f198bee.png'
+        image:'https://i.ibb.co/DKmyp04/6034.jpg'
     }
 ]
 

@@ -315,9 +315,6 @@ function generateData(){
     buttonOrder.innerHTML = 'ORDER SEKARANG';
     divbutton.appendChild(buttonOrder);
     cartList.appendChild(divbutton);
-
-
-  
-
 }
+
 generateData()

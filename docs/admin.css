@@ -10,7 +10,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #232527;
+  background: #82EFAF;
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -50,19 +50,19 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #f5f5f5;
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #f5f5f5;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
   text-align: center;
   font-size: 18px;
-  color: #fff;
+  color: #333;
 }
 .sidebar .nav-links li a .links_name{
-  color: #fff;
+  color: #333;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -87,8 +87,8 @@
 .home-section nav{
   display: flex;
   justify-content: space-between;
-  height: 80px;
-  background: #82EFAF;
+  height: 90px;
+  background: #fff;
   display: flex;
   align-items: center;
   position: fixed;
@@ -167,6 +167,7 @@ nav .profile-details .admin_name{
   color: #333;
   margin: 0 10px;
   white-space: nowrap;
+  text-align: center;
 }
 nav .profile-details i{
   font-size: 25px;
@@ -215,7 +216,7 @@ nav .profile-details i{
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
-  color: #fff;
+  color: #333;
   font-size: 20px;
   margin-right: 5px;
 }
@@ -298,7 +299,7 @@ nav .profile-details i{
   justify-content: flex-end;
 }
 .sales-boxes .box .button a{
-  color: #fff;
+  color: #333;
   background: #0A2558;
   padding: 4px 12px;
   font-size: 15px;

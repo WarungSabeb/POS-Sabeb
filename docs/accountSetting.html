@@ -3,12 +3,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title>Product</title>
-    <link rel="stylesheet" href="Product.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="accountSetting.css">
 
     <link href='' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    </head>
 <body>
   <div class="sidebar">
@@ -26,7 +30,7 @@
           </a>
         </li>
         <li>
-          <a href="Product.html" class="active">
+          <a href="Product.html">
             <i class='bx bx-box' ></i>
             <span class="links_name">Product</span>
           </a>
@@ -43,8 +47,9 @@
             <span class="links_name">Total order</span>
           </a>
         </li> -->
+
         <li>
-          <a href="accountSetting.html">
+          <a href="accountSetting.html" class="active">
             <i class='bx bxs-user-account' ></i>
             <span class="links_name">Account setting</span>
           </a>
@@ -76,7 +81,7 @@
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
+        <img src="images/profile.jpg" alt="">
         <span class="admin_name">Pos Sabeb</span>
         
       </div>
@@ -84,36 +89,59 @@
 
     <div class="home-content">
 
+      
+
+
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">
-            <span>Product</span>
-            <a href="set.html" >
-              <button class = "setting" >
-                <i class='bx bx-edit'></i> Setting
-              </button>
-            </a>
-
-          </div>
+          <!-- <div class="title">Recent Sales</div>
           <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
 
-            <table id="item">
+            </ul>
+            <ul class="details">
+            <li class="topic">Customer</li>
 
-            <tr class="details" id="header">
-              <th class="topic">Name</th>
-              <th class="topic">Image</th>
-              <th class="topic">Price</th>
-              <th class="topic">Stock</th>
-            </tr>
+          </ul>
+          <ul class="details">
+            <li class="topic">Sales</li>
 
-          </table>
+          </ul>
+          <ul class="details">
+            <li class="topic">Total</li>
 
-          </div>
-        </div>
+          </ul>
+          </div> -->
+
+          <form action="" method="post" class="form">
+            <div class="form-group">
+              <label>Username</label>
+              <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="number" class="form-control" id="telephone" >
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input type="password" class="form-control" id="confirmpass">
+            </div>
+            <button type="submit" class="btn btn-primary">Update
+            </form>
+
       </div>
     </div>
   </section>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
   <script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
@@ -125,8 +153,6 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
-
-<script src="Product.js"></script>
 
 </body>
 </html>

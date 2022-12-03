@@ -399,6 +399,12 @@ table {
   width: 153px;
 }
 
+input, textarea {
+  width: 80%;
+  height: 80%;
+
+}
+
 
 /* Responsive Media Query */
 @media (max-width: 1240px) {

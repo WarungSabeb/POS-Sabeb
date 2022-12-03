@@ -59,9 +59,9 @@
         <div class="underline-title"></div>
       </div>
       
-      <form action="" method="post" class="form">
-        <label for="user-email" style="padding-top:13px">&nbsp;Username</label>
-        <input id="user-email" class="form-content" type="text" name="Username" placeholder="Username" autocomplete="on" required />
+      <form action="/api/auth/register" method="post" class="form">
+        <label for="user-name" style="padding-top:13px">&nbsp;Username</label>
+        <input id="user-name" class="form-content" type="text" name="full_name" placeholder="Username" autocomplete="on" required />
         <div class="form-border"></div>
 
         <label for="user-email" style="padding-top:22px">&nbsp;Email</label>
@@ -69,19 +69,15 @@
         <div class="form-border"></div>
 
         <label for="user-email" style="padding-top:22px">&nbsp;Phone Number</label>
-        <input id="user-email" class="form-content" type="number" name="phonenumber" autocomplete="on" required />
+        <input id="user-email" class="form-content" type="number" name="phone" autocomplete="on" required />
         <div class="form-border"></div>
         
         <label for="user-password" style="padding-top:22px">&nbsp;Password</label>
         <input id="user-password" class="form-content" type="password" name="password" required />
         <div class="form-border"></div>
 
-        <label for="user-password" style="padding-top:22px">&nbsp;Confirm Password</label>
-        <input id="user-password2" class="form-content" type="password" name="confirmpassword"  required />
-        <div class="form-border"></div>
-        
         <br>
-        <input id="submit-btn" type="submit" name="submit" value="SIGN UP" />
+        <input id="submit-btn" type="submit" />
         <p id="LogIn">Sudah Memiliki Akun?
             <a href="Login.html" id="login">Masuk.</a>
         </p>

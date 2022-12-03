@@ -60,7 +60,7 @@
         <div class="underline-title"></div>
       </div>
       
-      <div method="post" class="form" href="admin.html">
+      <form method="post" class="form" action="/api/auth/login">
         <label for="user-email" style="padding-top:13px">&nbsp;Email Adress</label>
         <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
         <div class="form-border"></div>
@@ -69,11 +69,12 @@
         <input id="user-password" class="form-content" type="password" name="password" required />
 
         <div class="form-border"></div>
-        <a href="LupaPassword.html">
+        <a href="LupaPassword">
             <legend id="forgot-pass">Lupa Password?</legend>
         </a>
 
-        <button onclick="location.href = 'admin.html';" id="submit-btn" type="submit" name="submit" value="LOGIN" >LOGIN</button>
+        <button id="submit-btn" type="submit">LOGIN</button>
+
 
 
         <p id="SignUp">Belum terdaftar?

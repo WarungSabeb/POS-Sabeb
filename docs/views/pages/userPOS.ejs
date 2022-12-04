@@ -30,8 +30,8 @@
               
           </ul>
       
-          <a type="button" class="btn btn-secondary" style="border-radius:20px; background-color: #393A3F;" href="./Login"> Masuk</a>
-          <a type="button" class="btn btn-secondary " style="margin-left: 5px;border-radius:20px; background-color: #008CFF;" href="./Sign-up">Daftar</a>
+          <!-- <a type="button" class="btn btn-secondary" style="border-radius:20px; background-color: #393A3F;" href="./Login"> Masuk</a>
+          <a type="button" class="btn btn-secondary " style="margin-left: 5px;border-radius:20px; background-color: #008CFF;" href="./Sign-up">Daftar</a> -->
         </div>
       
       </nav>
@@ -41,13 +41,13 @@
       <br>
     <div class="main">
         <div class="content" id='foodList'>
-            
+
             <%itemsList.forEach(item => {%>
               <div class="card">
                 <img src="<%= item.item_image %>">
                 <p><%= item.item_name %> </p><div class="action">
-                  <span><%= item.item_price %> | Stok : <%= item.item_stock %></span>
-                  <button value="0" onclick="addtoCart(this.value)">
+                  <span >Rp <%= item.item_price %> | Stok : <%= item.item_stock %></span>
+                  <button class="order" value="0" onclick="addtoCart(this.value)">
                     <i class="fas fa-cart-plus" aria-hidden="true">
                     </i> Pesan</button>
                   </div>
@@ -57,6 +57,8 @@
          
         </div>
         <div class="sidebar" id="cartList">
+
+        </div>
 
     </div>
     <script src="./userPOS.js"></script>

@@ -28,6 +28,18 @@ async function createItem(name, image, price, stock) {
   return newItem.save();
 }
 
+async function updateUser(email, fullName, phone, password) {
+  const hashedPassword = await hashPassword(password);
+  const newUser = new Users({
+    email,
+    full_name: fullName,
+    phone,
+    password: hashedPassword,
+  });
+
+  return newUser.save();
+}
+
 async function findByEmail(email) {
   return Users.findOne({ email }).exec();
 }
@@ -57,6 +69,7 @@ async function findById(id) {
 
 module.exports = {
   createUser,
+  updateUser,
   createItem,
   findByEmail,
   login,

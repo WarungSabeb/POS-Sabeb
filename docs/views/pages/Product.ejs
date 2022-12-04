@@ -19,12 +19,7 @@
       </a>
     </div>
       <ul class="nav-links">
-        <li>
-          <a href="admin">
-            <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-        </li>
+
         <li>
           <a href="Product" class="active">
             <i class='bx bx-box' ></i>
@@ -47,10 +42,13 @@
         </li>
 
         <li class="log_out">
-          <a href="Logout">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Log out</span>
-          </a>
+          <form action="/logout" method="post">
+            <form action="/logout?_method=DELETE" method="POST">
+              <button class="outButton" type="submit">
+                <i class='bx bx-log-out'></i>
+                <span>Log Out</span>
+              </button>
+            </form>
         </li>
       </ul>
   </div>
@@ -60,13 +58,10 @@
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
-      </div>
+
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Pos Sabeb</span>
+        <span class="admin_name">Hi <%= name %></span>
         
       </div>
     </nav>
@@ -77,7 +72,7 @@
         <div class="recent-sales box">
           <div class="title">
             <span>Product</span>
-            <a href="set" >
+            <a href="add" >
               <button class = "setting" >
                 <i class='bx bxs-file-plus'></i> Add Item
               </button>

@@ -30,20 +30,19 @@ module.exports = (app) => {
       // TODO: Check useris already registered
         const existingUser = await userController.findByEmail(req.body.email);
         if (existingUser) {
-          throw new Error('Email already registered');
+          res.redirect('/Sign-up-fail');
         }
 
-        // TODO: register user
-        await userController.createUser(
-          req.body.email,
-          req.body.full_name,
-          req.body.phone,
-          req.body.password,
-        );
-        res.redirect('/Login');
-        // return res.json({
-        //   status: 'OK',
-        // }).status(200);
+        if (!existingUser) {
+          // TODO: register user
+          await userController.createUser(
+            req.body.email,
+            req.body.full_name,
+            req.body.phone,
+            req.body.password,
+          );
+          res.redirect('/Login');
+        }
       } catch (err) {
         return next(err);
       }
@@ -61,17 +60,12 @@ module.exports = (app) => {
         );
 
         if (!user) {
-          throw new Error('Wrong email or password');
+          res.redirect('/Login-fail');
         }
 
-        // Generate Token
-        // const token = await userController.generateToken(user.id);
-        // return res.json({
-        //   email: user.email,
-        //   full_name: user.username,
-        //   token,
-        // }).status(200);
-        res.redirect('/admin');
+        if (user) {
+          res.redirect('/Product');
+        }
       } catch (err) {
         return next(err);
       }
@@ -88,26 +82,10 @@ module.exports = (app) => {
           req.body.item_price,
           req.body.item_stock,
         );
-        res.redirect('/set');
+        res.redirect('/add');
       } catch (err) {
         return next(err);
       }
     },
   );
-
-  //   route.get('/item', async (req, res) => {
-  //     Items.find().then((result) => {
-  //       res.send(result);
-  //     }).catch((err) => {
-  //       console.log(err);
-  //     });
-  //   });
-
-//   route.get('/user', async (req, res) => {
-//     Users.find().then((result) => {
-//       res.send(result);
-//     }).catch((err) => {
-//       console.log(err);
-//     });
-//   });
 };

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Item</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="add.css">
+
+
+    <link href='' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <a href="index">
+        <i class='bx bx-home'></i>
+        <span class="logo_name">Pos Sabeb</span>
+      </a>
+    </div>
+      <ul class="nav-links">
+
+        <li>
+          <a href="Product" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Product</span>
+          </a>
+        </li>
+        <li>
+          <a href="accountSetting">
+            <i class='bx bxs-user-account' ></i>
+            <span class="links_name">Account setting</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="userPOS">
+            <i class='bx bx-store' ></i>
+            <span class="links_name">Your POS</span>
+          </a>
+        </li>
+
+        <li class="log_out">
+          <form action="/logout?_method=DELETE" method="POST">
+            <button class="outButton" type="submit">
+              <i class='bx bx-log-out'></i>
+              <span>Log Out</span>
+            </button>
+          </form>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Pos Sabeb</span>
+        
+      </div>
+    </nav>
+
+    <div class="home-content">
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+ 
+            <form action="/api/auth/item" method="post" class="form">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" id="item-name" name="item_name">
+            </div>
+            <div class="form-group">
+              <label>Image</label>
+              <input type="text" class="form-control" id="item-image" name="item_image">
+            </div>
+            <div class="form-group">
+              <label>Price</label>
+              <input type="number" class="form-control" id="item-price" name="item_price">
+            </div>
+            <div class="form-group">
+              <label>Stock</label>
+              <input type="number" class="form-control" id="item-stock" name="item_stock">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+<script src="add.js"></script>
+
+</body>
+</html>
+
